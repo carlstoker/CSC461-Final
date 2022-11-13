@@ -11,5 +11,3 @@ Borano Llana, Nicholas Rommel, Carl Stoker
 # Data
 
 # Methods
-
-# Preliminary Results
