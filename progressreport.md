@@ -1,4 +1,5 @@
 # Title
+Art classification
 
 # Team members
 Borano Llana, Nicholas Rommel, Carl Stoker
