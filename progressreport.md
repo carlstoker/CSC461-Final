@@ -13,7 +13,7 @@ Art can be classified into many different genres and categories, across multiple
 We are attempting to classify different works of art into their respective genres. These include adstract, realism, as well as other categories. We will be including as many categories to our classifier as is feasible.
 
 # Data
-
+The most crucial part of this project, the data has to be carefully chosen (or manipulated) to fit our needs. That could include cropping, resizing, depending on the state of the dataset(s) we take our data from. We are currently biased towards picking the open source dataset from the "NationalGalleryofArt" databases. However, this will not exclude additional data that could be taken from other sources (that are free to use) such as Kaggle, Imagenet, etc.
 
 # Methods
 The pipeline we will use to solve this problem is as follows:
