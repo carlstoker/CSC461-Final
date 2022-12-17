@@ -6,7 +6,7 @@
 
 - [x] Data sanitization (remove rows with blank genre, remove unneeded columns)
 
-- [ ] Split the data into Train, Validation, Test
+- [x] Split the data into Train, Validation, Test
 
 - [ ] Convolutional Neural Network
 
