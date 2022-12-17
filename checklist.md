@@ -1,10 +1,10 @@
 - [x] Find or create a tagged and labeled dataset of art images
 
-- [ ] Resize the images to something manageable (ie 224x224)
+- [x] Resize the images to something manageable (ie 224x224)
 
 - [ ] Find a way to host the images
 
-- [ ] Data sanitization (remove rows with blank genre, remove unneeded columns)
+- [x] Data sanitization (remove rows with blank genre, remove unneeded columns)
 
 - [ ] Split the data into Train, Validation, Test
 
