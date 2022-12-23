@@ -1,4 +1,5 @@
-# Image Classification Neural Network adapted from Aakash Rao's tutorial at https://jovian.ai/aakashns/05b-cifar10-resnet
+# Image Classification Neural Network adapted from Aakash Rao's tutorial
+# at https://jovian.ai/aakashns/05b-cifar10-resnet
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -31,8 +32,8 @@ class ImageClassificationBase(nn.Module):
         return {'val_loss': epoch_loss.item(), 'val_acc': epoch_acc.item()}
 
     def epoch_end(self, epoch, result):
-        print("Epoch [{}], last_lr: {:.5f}, train_loss: {:.4f}, val_loss: {:.4f}, val_acc: {:.4f}".format(
-            epoch, result['lrs'][-1], result['train_loss'], result['val_loss'], result['val_acc']))
+        # Print tab-delimited results
+        print(f"{epoch}\t{result['lrs'][-1]:.5f}\t{result['train_loss']:.4f}\t\t{result['val_loss']:.4f}\t\t{result['val_acc']:.4f}")
 
 
 def conv_block(in_channels, out_channels, pool=False):
@@ -127,6 +128,7 @@ def fit_one_cycle(epochs, max_lr, model, train_loader, val_loader,
     sched = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr, epochs=epochs,
                                                 steps_per_epoch=len(train_loader))
 
+    print("Epoch\tLast LR\tTrain Loss\tVal Loss\tVal Acc")
     for epoch in range(epochs):
         # Training Phase
         model.train()
